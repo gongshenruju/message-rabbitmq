@@ -1,0 +1,29 @@
+server:
+  port: 8090
+  servlet:
+    context-path: /
+  tomcat:
+    uri-encoding: UTF-8
+    max-threads: 1000
+    min-spare-threads: 30
+spring:
+  rabbitmq:
+    host: #主机的ip地址
+    port: #主机通信端口号
+    username: #用户名
+    password: #用户密码
+    virtual-host: #虚拟机位置
+    listener:
+      simple:
+        acknowledge-mode: manual
+
+# Swagger界面内容配置
+swagger:
+  title: Message-RabbitMQ API接口文档
+  description: Message-RabbitMQ Api Documentation
+  version: 1.0.0
+  termsOfServiceUrl: http://www.zeronework.com
+  contact:
+    name: gongshenruju
+    url: http://www.zeronework.com
+    email: lufeng_coder@163.com
